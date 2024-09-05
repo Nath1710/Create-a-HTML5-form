@@ -1,0 +1,31 @@
+body {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+
+#credit {
+    background-color: rgba(108, 117, 125, 255);
+    border-radius: 10px;
+    height: 33px;
+    width: 250px;
+    padding-left: 10px;
+    padding-top: 5px;
+    color: white;
+}
+
+#all {
+    padding: 10px 30px 10px 30px;
+    margin-top: 10px;
+
+}
+
+.card {
+    width: 1000px;
+}
+
+.boxes {
+    padding-top: 10px;
+}

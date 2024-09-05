@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Script -->
+    <script src="script.js"></script>
+    <!-- Fonts -->
+    <script src="https://kit.fontawesome.com/0eca11b90d.js" crossorigin="anonymous"></script>
+    <title>Create a HTML5 form</title>
+</head>
+
+<body>
+
+    <!-- card -->
+    <div class="card">
+        <div id="all">
+            <div class="card-header border">
+                <h5> Payment for example</h5>
+            </div>
+            <div class="card-body border">
+                <div id="fields">
+                    <div class="alert alert-danger" role="alert">
+                        Some fields are missing
+                    </div>
+                </div>
+                <!-- data credit card -->
+                <div id="contenedor" class="container-fluid">
+                    <div id="tarjeta" class="d-flex justify-content-between row">
+                        <fieldset class="col-md-4 boxes">
+                            <label for="Name">Card #</label><br>
+                            <input name="credit-number" class="form-control" id="ccnumber" type="tel" pattern="\d*"
+                                maxlength="19" placeholder="XXXX XXXX XXXX XXXX">
+                        </fieldset>
+                        <fieldset class="col-md-4 boxes">
+                            <label for="Name">CVC #</label><br>
+                            <input name="credit-cvc" class="form-control" id="cccvc" type="tel" pattern="\d*"
+                                maxlength="3" placeholder="CVC">
+                        </fieldset>
+                        <fieldset class="col-md-4 boxes">
+                            <label for="Name">Amount</label>
+                            <div class="d-flex">
+                                <span class="fw-bold">$</span>
+                                <input name="Amount" class="form-control" type="tel" pattern="\d*" maxlength="7"
+                                    placeholder="">
+                            </div>
+                        </fieldset>
+                    </div>
+                    <!-- payer information -->
+                    <div id="information" class=" d-flex row">
+                        <div class="col-md-6">
+                            <fieldset class="boxes ">
+                                <label for="Name">First name</label>
+                                <input type="text" class="form-control" aria-label="Username">
+                            </fieldset>
+                            <fieldset class="boxes">
+                                <label for="Name">City</label><br>
+                                <input type="text" name="credit-number" class="form-control">
+                            </fieldset>
+                            <!-- type card -->
+                            <fieldset class="boxes">
+                                <div id="credit" class="form-check form-check-inline my-3">
+                                    <div class="row d-flex align-items-center">
+                                        <div class="col-auto d-flex align-items-center">
+                                            <input type="radio" name="credit-number" class="cc-number">
+                                            <label for="Name" class="ms-2">
+                                                <i class="fa-brands fa-cc-mastercard"></i>
+                                            </label>
+                                        </div>
+                                        <div class="col-auto d-flex align-items-center">
+                                            <input type="radio" name="credit-number" class="cc-number">
+                                            <label for="Name" class="ms-2">
+                                                <i class="fa-brands fa-cc-visa"></i>
+                                            </label>
+                                        </div>
+                                        <div class="col-auto d-flex align-items-center">
+                                            <input type="radio" name="credit-number" class="cc-number">
+                                            <label for="Name" class="ms-2">
+                                                <i class="fa-brands fa-cc-diners-club"></i>
+                                            </label>
+                                        </div>
+                                        <div class="col-auto d-flex align-items-center">
+                                            <input type="radio" name="credit-number" class="cc-number">
+                                            <label for="Name" class="ms-2">
+                                                <i class="fa-brands fa-cc-apple-pay"></i>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </div>
+                        <!-- payer information -->
+                        <div class="flex-column d-flex col-md-6">
+                            <fieldset class="boxes">
+                                <label for="Name">Last name</label>
+                                <input type="text" class="form-control" aria-label="Username">
+                            </fieldset>
+                            <div class="d-flex w-100 justify-content-between gap-2">
+                                <!-- List State -->
+                                <fieldset class="boxes w-100">
+                                    <label for="Name">State</label>
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected>Pick a state</option>
+                                        <option value="1">AMAZONAS</option>
+                                        <option value="2">ANTIOQUIA</option>
+                                        <option value="3">ARAUCA</option>
+                                        <option value="4">ATLÁNTICO</option>
+                                        <option value="5">BOLÍVAR</option>
+                                        <option value="6">BOYACÁ</option>
+                                        <option value="7">CALDAS</option>
+                                        <option value="8">CAQUETÁ</option>
+                                        <option value="9">CASANARE</option>
+                                        <option value="10">CAUCA</option>
+                                        <option value="11">CESAR</option>
+                                        <option value="12">CHOCÓ</option>
+                                        <option value="13">CÓRDOBA</option>
+                                        <option value="14">CUNDINAMARCA</option>
+                                        <option value="15">DISTRITO CAPITAL</option>
+                                        <option value="16">GUAINÍA</option>
+                                        <option value="17">GUAVIARE</option>
+                                        <option value="18">HUILA</option>
+                                        <option value="19">LA GUAJIRA</option>
+                                        <option value="20">MAGDALENA</option>
+                                        <option value="21">META</option>
+                                        <option value="22">NARIÑO</option>
+                                        <option value="23">NORTE DE SANTANDER</option>
+                                        <option value="24">PUTUMAYO</option>
+                                        <option value="25">QUINDÍO</option>
+                                        <option value="26">RISARALDA</option>
+                                        <option value="27">SAN ANDRÉS Y PROVIDENCIA</option>
+                                        <option value="28">SANTANDER</option>
+                                        <option value="29">SUCRE</option>
+                                        <option value="30">TOLIMA</option>
+                                        <option value="31">VALLE</option>
+                                        <option value="32">VAUPÉS</option>
+                                        <option value="33">VICHADA</option>
+                                    </select>
+                                </fieldset>
+                                <fieldset class="boxes w-100 gap-2">
+                                    <label for="Name">Postal code</label><br>
+                                    <input name="credit-expires" class="form-control" type="tel" pattern="\d*"
+                                        maxlength="7">
+                                </fieldset>
+                            </div>
+                            <!-- comments -->
+                            <fieldset class="boxes">
+                                <label for="comments" class="fw-bold" style="align-self: flex-start;">Message</label>
+                                <textarea class="mb-2" rows="4" name="comments" id="comments"
+                                    style="white-space: nowrap; width: 100%;"></textarea>
+                                <span class="secondary" style="align-self: flex-start;">Add any notes here</span>
+                            </fieldset>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- buttons -->
+            <div id="pick" class="card-footer d-flex justify-content-end gap-2 border">
+                <a href="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExbDhzaXlzbzEwazczYzlka3FjMjVvanMyYjZpbGcza2JmMW8yeGJ3diZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l0OWiTdUNM8lUyzUk/giphy.webp"
+                    class="btn btn-secondary">Cancel</a>
+                <a id="pay" href="#" class="btn btn-primary">Send</a>
+            </div>
+        </div>
+    </div>
+    <!-- Bootstrap script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
