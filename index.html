@@ -34,20 +34,20 @@
                 <div id="contenedor" class="container-fluid">
                     <div id="tarjeta" class="d-flex justify-content-between row">
                         <fieldset class="col-md-4 boxes">
-                            <label for="Name">Card #</label><br>
+                            <label for="credit-number">Card #</label><br>
                             <input name="credit-number" class="form-control" id="ccnumber" type="tel" pattern="\d*"
                                 maxlength="19" placeholder="XXXX XXXX XXXX XXXX">
                         </fieldset>
                         <fieldset class="col-md-4 boxes">
-                            <label for="Name">CVC #</label><br>
+                            <label for="credit-cvc">CVC #</label><br>
                             <input name="credit-cvc" class="form-control" id="cccvc" type="tel" pattern="\d*"
                                 maxlength="3" placeholder="CVC">
                         </fieldset>
                         <fieldset class="col-md-4 boxes">
-                            <label for="Name">Amount</label>
+                            <label for="amount">Amount</label>
                             <div class="d-flex">
                                 <span class="fw-bold">$</span>
-                                <input name="Amount" class="form-control" type="tel" pattern="\d*" maxlength="7"
+                                <input name="amount" class="form-control" type="tel" pattern="\d*" maxlength="7"
                                     placeholder="">
                             </div>
                         </fieldset>
@@ -56,38 +56,38 @@
                     <div id="information" class=" d-flex row">
                         <div class="col-md-6">
                             <fieldset class="boxes ">
-                                <label for="Name">First name</label>
-                                <input type="text" class="form-control" aria-label="Username">
+                                <label for="first-name">First name</label>
+                                <input name="first-name" type="text" class="form-control" aria-label="Username">
                             </fieldset>
                             <fieldset class="boxes">
-                                <label for="Name">City</label><br>
-                                <input type="text" name="credit-number" class="form-control">
+                                <label for="city">City</label><br>
+                                <input type="text" name="city" class="form-control">
                             </fieldset>
                             <!-- type card -->
                             <fieldset class="boxes">
                                 <div id="credit" class="form-check form-check-inline my-3">
                                     <div class="row d-flex align-items-center">
                                         <div class="col-auto d-flex align-items-center">
-                                            <input type="radio" name="credit-number" class="cc-number">
-                                            <label for="Name" class="ms-2">
+                                            <input type="radio" name="master-card" class="cc-number">
+                                            <label for="master-card" class="ms-2">
                                                 <i class="fa-brands fa-cc-mastercard"></i>
                                             </label>
                                         </div>
                                         <div class="col-auto d-flex align-items-center">
-                                            <input type="radio" name="credit-number" class="cc-number">
-                                            <label for="Name" class="ms-2">
+                                            <input type="radio" name="visa" class="cc-number">
+                                            <label for="visa" class="ms-2">
                                                 <i class="fa-brands fa-cc-visa"></i>
                                             </label>
                                         </div>
                                         <div class="col-auto d-flex align-items-center">
-                                            <input type="radio" name="credit-number" class="cc-number">
-                                            <label for="Name" class="ms-2">
+                                            <input type="radio" name="dinners-club" class="cc-number">
+                                            <label for="dinners-club" class="ms-2">
                                                 <i class="fa-brands fa-cc-diners-club"></i>
                                             </label>
                                         </div>
                                         <div class="col-auto d-flex align-items-center">
-                                            <input type="radio" name="credit-number" class="cc-number">
-                                            <label for="Name" class="ms-2">
+                                            <input type="radio" name="apple-pay" class="cc-number">
+                                            <label for="apple-pay" class="ms-2">
                                                 <i class="fa-brands fa-cc-apple-pay"></i>
                                             </label>
                                         </div>
@@ -98,14 +98,15 @@
                         <!-- payer information -->
                         <div class="flex-column d-flex col-md-6">
                             <fieldset class="boxes">
-                                <label for="Name">Last name</label>
-                                <input type="text" class="form-control" aria-label="Username">
+                                <label for="last-name">Last name</label>
+                                <input name="last-name" type="text" class="form-control" aria-label="Username">
                             </fieldset>
                             <div class="d-flex w-100 justify-content-between gap-2">
                                 <!-- List State -->
                                 <fieldset class="boxes w-100">
-                                    <label for="Name">State</label>
-                                    <select class="form-select" aria-label="Default select example">
+                                    <label for="state-colombia">State</label>
+                                    <select name="state-colombia" class="form-select"
+                                        aria-label="Default select example">
                                         <option selected>Pick a state</option>
                                         <option value="1">AMAZONAS</option>
                                         <option value="2">ANTIOQUIA</option>
@@ -143,8 +144,8 @@
                                     </select>
                                 </fieldset>
                                 <fieldset class="boxes w-100 gap-2">
-                                    <label for="Name">Postal code</label><br>
-                                    <input name="credit-expires" class="form-control" type="tel" pattern="\d*"
+                                    <label for="postal-code">Postal code</label><br>
+                                    <input name="postal-code" class="form-control" type="tel" pattern="\d*"
                                         maxlength="7">
                                 </fieldset>
                             </div>
